@@ -1,0 +1,115 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="project" target="8" version="2">
+  <project Name="project">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00200000,FFFFFFFF;RWX 24000000,00080000,CDCDCDCD"
+      arm_target_device_name="STM32H743ZI"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00200000;SRAM RWX 0x24000000 0x00080000"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="Internal"
+      build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj"
+      build_output_directory="Output/$(Configuration)/Exe"
+      build_output_file_name="$(OutDir)/$(ProjectName)$(EXE)"
+      c_user_include_directories="$(PackagesDir)/CMSIS_4/CMSIS/Include"
+      link_use_linker_script_file="No" />
+    <configuration
+      Name="External IAR"
+      project_type="Externally Built Executable" />
+    <folder Name="Internal Files">
+      <configuration Name="Common" build_exclude_from_build="Yes" />
+      <configuration Name="Internal" build_exclude_from_build="No" />
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+      <file file_name="$(StudioDir)/samples/Cortex_M_Startup.s" />
+    </folder>
+    <configuration
+      Name="Flash"
+      build_intermediate_directory="Flash/Obj"
+      build_output_directory="Flash/Exe"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32H743xx"
+      c_user_include_directories=";./../../Libraries/CMSIS/Include;./../../Libraries/CMSIS/Device/ST/STM32H7xx/Include;./../../Libraries/STM32H7xx_HAL_Driver/Inc;./../../User/bsp/inc;./../../User;./../../User/bsp"
+      link_linker_script_file="./stm32h743xx_flash.icf"
+      link_use_linker_script_file="Yes" />
+    <configuration
+      Name="Flash External"
+      asm_additional_options="-r"
+      build_output_file_name="$(OutDir)/$(ProjectName).out"
+      c_additional_options=";--dlib_config &quot;$(IAR_TOOLKIT_DIR)/inc/c/DLib_Config_Normal.h&quot;;;--debug;-e;-Ol"
+      linker_additional_options=";--semihosting;--entry;__iar_program_start" />
+    <folder Name="BSP">
+      <file file_name="./../../User/bsp/bsp.c" />
+      <file file_name="./../../User/bsp/bsp.h" />
+      <file file_name="./../../User/bsp/src/bsp_key.c" />
+      <file file_name="./../../User/bsp/src/bsp_led.c" />
+      <file file_name="./../../User/bsp/src/bsp_timer.c" />
+      <file file_name="./../../User/bsp/stm32h7xx_hal_timebase_tim.c" />
+      <file file_name="./../../User/bsp/stm32h7xx_it.c" />
+      <file file_name="./../../User/bsp/src/stm32h7xx_nucleo_144.c" />
+    </folder>
+    <folder Name="CMSIS">
+      <file file_name="./../../Libraries/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c" />
+    </folder>
+    <folder Name="Doc">
+      <file file_name="./../../Doc/01.&#xe4;&#xbe;&#x8b;&#xe7;&#xa8;&#x8b;&#xe5;&#x8a;&#x9f;&#xe8;&#x83;&#xbd;&#xe8;&#xaf;&#xb4;&#xe6;&#x98;&#x8e;.txt" />
+      <file file_name="./../../Doc/02.&#xe4;&#xbe;&#x8b;&#xe7;&#xa8;&#x8b;&#xe4;&#xbf;&#xae;&#xe6;&#x94;&#xb9;&#xe8;&#xae;&#xb0;&#xe5;&#xbd;&#x95;.txt" />
+    </folder>
+    <folder Name="EWARMv8">
+      <file file_name="./../../Libraries/CMSIS/Device/ST/STM32H7xx/Source/Templates/iar/startup_stm32h743xx.s">
+        <configuration Name="Internal" build_exclude_from_build="Yes" />
+      </file>
+    </folder>
+    <folder Name="HAL_Driver">
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" />
+      <file file_name="./../../User/bsp/stm32h7xx_hal_conf.h" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" />
+      <file file_name="./../../Libraries/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" />
+    </folder>
+    <folder Name="SEGGER/HardFault">
+      <file file_name="./../../User/segger/HardFaultHandlerIAR/HardFaultHandler.S" />
+      <file file_name="./../../User/segger/HardFaultHandlerIAR/SEGGER_HardFaultHandler.c" />
+    </folder>
+    <folder Name="User">
+      <file file_name="./../../User/main.c" />
+    </folder>
+  </project>
+  <configuration
+    Name="External IAR"
+    asm_additional_options="--cpu;$(CoreType);--fpu;$(FPU3);-S"
+    c_additional_options="--cpu;$(CoreType);--fpu;$(FPU3);--silent"
+    external_archive_command="&quot;$(IAR_TOOLKIT_DIR)/bin/iarchive&quot; --create &quot;$(RelTargetPath)&quot; $(Objects)"
+    external_assemble_command="&quot;$(IAR_TOOLKIT_DIR)/bin/iasmarm&quot; $(AsmOptions) &quot;$(RelInputPath)&quot; -o &quot;$(RelTargetPath)&quot;"
+    external_c_compile_command="&quot;$(IAR_TOOLKIT_DIR)/bin/iccarm&quot; $(COptions) $(COnlyOptions) $(Defines) $(Includes) &quot;$(RelInputPath)&quot; --dependencies=m &quot;$(RelDependencyPath)&quot; --no_wrap_diagnostics -o &quot;$(RelTargetPath)&quot;"
+    external_cpp_compile_command="&quot;$(IAR_TOOLKIT_DIR)/bin/iccarm&quot; --c++ $(COptions) $(CppOnlyOptions) $(Defines) $(Includes) &quot;$(RelInputPath)&quot; --dependencies=m &quot;$(RelDependencyPath)&quot; --no_wrap_diagnostics -o &quot;$(RelTargetPath)&quot;"
+    external_link_command="&quot;$(IAR_TOOLKIT_DIR)/bin/ilinkarm&quot; $(LinkOptions) --config &quot;$(RelLinkerScriptPath)&quot; -f $(RelObjectsFilePath) -o &quot;$(RelTargetPath)&quot; --map &quot;$(RelMapPath)&quot; --no_wrap_diagnostics"
+    external_objects_file_name="$(IntDir)/$(ProjectName).xcl"
+    hidden="Yes"
+    linker_additional_options="--silent"
+    linker_post_build_command="&quot;$(IAR_TOOLKIT_DIR)/bin/ielftool&quot; &quot;$(RelTargetPath)&quot; &quot;$(PostLinkOutputFilePath)&quot; --ihex --silent"
+    linker_post_build_command_output_file="$(OutDir)/$(ProjectName).hex"
+    macros="IAR_TOOLKIT_DIR=D:/Program Files (x86)/IAR Systems/Embedded Workbench 8.1/arm" />
+  <configuration Name="Internal" hidden="Yes" />
+  <configuration
+    Name="Flash External"
+    inherited_configurations="External IAR;Flash" />
+  <configuration
+    Name="Flash Internal"
+    inherited_configurations="Internal;Flash" />
+  <configuration Name="Flash" hidden="Yes" />
+</solution>

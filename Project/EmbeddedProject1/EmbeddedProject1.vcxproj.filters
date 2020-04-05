@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{b887a5c8-f468-4d68-81e0-8efda6cd10d2}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{790f8dcc-8f33-467e-a8d4-1da4d771eeea}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{0a5596f2-5d44-46ad-b2d1-d40d6afefcdb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\User">
+      <UniqueIdentifier>{2b9dc5f3-116d-4872-9800-e2deff25962f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP">
+      <UniqueIdentifier>{23ee6016-30a3-42ba-952c-c1036f79efe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SFUD">
+      <UniqueIdentifier>{52ed0234-9295-40b1-b938-debc09acd83b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SFUD\port">
+      <UniqueIdentifier>{6afca6f4-207e-4829-aff4-512df63330b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SFUD\src">
+      <UniqueIdentifier>{1bb72c1c-8041-4044-bfac-5eaf9a95535d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MDK-ARM">
+      <UniqueIdentifier>{74b8a095-2a85-4b52-bd18-9246a18bb261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HAL_Driver">
+      <UniqueIdentifier>{0294503e-9bf8-4052-ae29-d85b914f01a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CMSIS">
+      <UniqueIdentifier>{20c33185-952b-4dc7-855c-abebc8abcfb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SEGGER">
+      <UniqueIdentifier>{5e5e30f0-4aa5-44ea-99c4-16bd41b3902d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SEGGER\HardFault">
+      <UniqueIdentifier>{eb3c24ed-1870-43e9-aeaf-6588def51d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FatFS">
+      <UniqueIdentifier>{58e1cf99-b780-4bc1-9b29-e312fefff3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Doc">
+      <UniqueIdentifier>{400374fe-8661-484a-8546-dbb7acf0b8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{3a1004a1-257c-4b0e-bf59-662cbd0199f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\User">
+      <UniqueIdentifier>{ce393ca5-5444-4d2e-9801-b3d57986db37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP">
+      <UniqueIdentifier>{68edc791-5281-4923-92d1-ecc4bfbc1541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SFUD">
+      <UniqueIdentifier>{1335dffd-b996-4929-a74f-d788c3d8443a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SFUD\port">
+      <UniqueIdentifier>{910f8006-84b0-42bc-b4fa-317b1e29d131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SFUD\src">
+      <UniqueIdentifier>{43055fea-df76-45e8-a05a-202b2a9e3e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MDK-ARM">
+      <UniqueIdentifier>{04a7b7e7-e352-43cf-a47c-1c04d8437de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HAL_Driver">
+      <UniqueIdentifier>{752138af-c379-49e8-83d0-787a5c2017e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CMSIS">
+      <UniqueIdentifier>{39bbbb3d-d9dd-4144-9058-71f4be5a937b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SEGGER">
+      <UniqueIdentifier>{100d43f2-26e3-4027-b4d7-0b4b8f609c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SEGGER\HardFault">
+      <UniqueIdentifier>{e24f3d49-5c2d-4f60-9179-5fd72db701e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FatFS">
+      <UniqueIdentifier>{1ad44691-6f87-47cb-873c-4a7889832f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Doc">
+      <UniqueIdentifier>{601670c6-05dd-4025-b13b-96f78182400a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{67a99095-e6a3-44d7-8b87-26a7e81001e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{ed46b8dc-91b4-41b9-ac5a-908c41ea3107}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\User\main.c">
+      <Filter>Source files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\demo_spi_flash.c">
+      <Filter>Source files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\bsp.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_led.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_key.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_timer.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_beep.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_fmc_io.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_sdio_sd.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_uart_fifo.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\stm32h7xx_it.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_tim_pwm.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_lptim_pwm.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_spi_bus.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\bsp\src\bsp_spi_flash.c">
+      <Filter>Source files\BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\sfud\port\sfud_port.c">
+      <Filter>Source files\SFUD\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\sfud\src\sfud.c">
+      <Filter>Source files\SFUD\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\sfud\src\sfud_sfdp.c">
+      <Filter>Source files\SFUD\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sram.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_lptim.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c">
+      <Filter>Source files\HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c">
+      <Filter>Source files\CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\User\segger\HardFaultHandlerMDK\SEGGER_HardFaultHandler.c">
+      <Filter>Source files\SEGGER\HardFault</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\ff.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\option\syscall.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\option\cc936.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\diskio.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\ff_gen_drv.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\FatFs\src\drivers\sd_diskio_dma.c">
+      <Filter>Source files\FatFS</Filter>
+    </ClCompile>
+    <None Include="stm32.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\StartupFiles\startup_stm32h743xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\User\bsp\bsp.h">
+      <Filter>Header files\BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\User\bsp\stm32h7xx_hal_conf.h">
+      <Filter>Header files\HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\FatFs\src\ffconf.h">
+      <Filter>Header files\FatFS</Filter>
+    </ClInclude>
+    <None Include="..\..\Doc\01.例程功能说明.txt">
+      <Filter>Header files\Doc</Filter>
+    </None>
+    <None Include="..\..\Doc\02.例程修改记录.txt">
+      <Filter>Header files\Doc</Filter>
+    </None>
+    <None Include="EmbeddedProject1-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="EmbeddedProject1-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
